@@ -1,10 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Your Name</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            min-height: 100vh;
+            transition: background-color 0.5s ease;
+        }
+        section img {
+            width: 100%;
+            height: auto;
+            transition: opacity 0.5s ease;
+        }
+        section:hover img {
+            opacity: 0.7;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .section1 {
+            background-color: #f0f0f0;
+        }
+        .section2 {
+            background-color: #e0e0e0;
+        }
+        .section3 {
+            background-color: #d0d0d0;
+        }
+        .section4 {
+            background-color: #c0c0c0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Personal Website</h1>
-    <p>This is a brief introduction about myself.</p>
+    <header>
+        <h1>My Personal Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Portfolio</a></li>
+                <li><a href="#section4">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="section1" class="section1">
+        <div class="container">
+            <h2>Home</h2>
+            <img src="path_to_your_image.jpg" alt="Home Image">
+        </div>
+    </section>
+    
+    <section id="section2" class="section2">
+        <div class="container">
+            <h2>About</h2>
+            <img src="path_to_your_image.jpg" alt="About Image">
+        </div>
+    </section>
+    
+    <section id="section3" class="section3">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <img src="path_to_your_image.jpg" alt="Portfolio Image">
+        </div>
+    </section>
+    
+    <section id="section4" class="section4">
+        <div class="container">
+            <h2>Contact</h2>
+            <img src="path_to_your_image.jpg" alt="Contact Image">
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 My Personal Website</p>
+    </footer>
 </body>
 </html>
