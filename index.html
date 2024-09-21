@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="0; url=piwy.htm">
     <title>Redirecting...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f3f3;
+            font-family: Arial, sans-serif;
+        }
+
+        .loader {
+            width: 80px;
+            height: 80px;
+            border: 10px solid rgba(243, 243, 243, 0.5);
+            border-top: 10px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="piwy.htm">link to index.htm</a>.</p>
+
+    <div class="loader"></div>
+
 </body>
 </html>
